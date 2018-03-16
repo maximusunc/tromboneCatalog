@@ -1,0 +1,10 @@
+<h3>Top Trombones</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let trombone of trombones" class="col-1-4" routerLink="/detail/{{trombone.id}}">
+    <div class="module trombone">
+      <h4>{{trombone.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-trombone-search></app-trombone-search>

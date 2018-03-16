@@ -1,14 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="tromboneCatalog">
 <head>
   <meta charset="utf-8">
-  <title>TromboneCatalog</title>
   <base href="/">
-
+  <title>TromboneCatalog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <div id="container">
+    <header>
+      <h1>Welcome to the pre-1800 trombone collection!</h1>
+    </header>
+    <app-root id="content"></app-root>
+    <footer>
+      <img src="./assets/images/AMISBanner.jpg">
+    </footer>
+  </div>
 </body>
 </html>

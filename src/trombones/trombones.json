@@ -1,0 +1,31 @@
+/*
+1) Abbreviations: be = bell; bo = bore (where only a single measurement is cited; bo1 refers to the inside bore of the initial or "descending" slide tube, bo2 to the inside bore of the "ascending" slide tube; diam. = diameter; ext. = exterior; int. = interior; h = height (i.e. length from tip of bell-bow to tip of slide-bow); le = overall length of tube (without mouthpiece unless otherwise specified); mp = mouthpiece; orig. = original; pos. = position, positions; sec. = section.Bibliographical abbreviations: Abb. = Abbildung, Abbildungen (illustration, illustrations)
+
+2) Dimensions are given in millimeters unless otherwise indicated.
+
+3) All instruments made of brass unless otherwise indicated.
+
+4) Under Literature, published photographs are shown in bold roman type, drawings are indicated in italic type; scale drawings in bold italic type. Where a single biographical entry is cited in connection with an instrument, it may be assumed to be the source of the information for that instrument; where multiple citations are given for one instrument, the work marked with an asterisk may be assumed to be the source for information on that instrument. 
+
+5) Dates are derived from inscriptions wherever possible, and the checklist is arranged chronologically. Subscript numbers following dates distinguish among multiple instruments produced in the same year. For undated instruments, approximate dates supplied by museum catlaogues and other secondary sources have been adopted here. ****The letters "ca." following a date signify "circa"; the letter "c" by itself signifies "century" (i.e., 18c = 18th century); 18cM = mid-eighteenth century; 18c2H = 18th century, second half; 18c2Q = 18th century, second quarter, and so on.
+
+6) Signatures are copied here exactly as they appear in the secondary sources form which they are derived, unless the author has examined the instrument personally. All appear on the garland of the instrument unless otherwise indicated.
+
+7) Information on pitch is reported exactly as it appears in the cited secondary source(s), unless the author has examined the instrument personally. Thus many seventeenth-century tenor trombones are reported here to be in B-flat, even though it is unlikely that this was the nominal pitch for any trombone during the period in question. Seventeenth-century instruments reported by modern writers to be in B-flat were probably considered to be in A at “high” pitch (Praetorius’ CammerThon, essentially equivalent to the pitch known as Chorton**** in most areas of Germany in the 18th century).
+
+8) All instruments are assumed to have no slide stockings unless otherwise indicated.
+*/
+[
+    {
+        "date": 1551,
+        "type": "Tenor",
+        "maker": "Erasmus Schnitzer",
+        "location": "Nüremberg",
+        "signature": "ERASMVS SCHNITZER DE NVRM [master's mark: crown] M. D. L I",
+        "pitch": "B-flat (slightly high)",
+        "dimensions": "bo 10.1, be 94, le 2645, h 1090, bell section entry**** 15",
+        "LOCATION1": "D-N, MI 170; acquired 1859",
+        "literature": "Jahn 1925: 24; Wörthmüller 1955: 463; Baines 1966: Fig. 748****(photo); Nödl 1970: 15 (photo); Gregory 1973: 30, 36; Langwill 1974: 159; *Van der Meer 1979: 91-92, Abb. 141-42 (photos);Van der Meer 1982: 9*****; Van der Meer 1983: 85 (photo); Fischer 1984: 15, 22, 43, Figs. 4, 6 (photos);Fischer 1989: 65 and n. 4; SmithD 1989: 30; Huber 1989: 355; Herbert 2004.",
+        "remarks": "Bell is from a trumpet; according to Fischer, additional parts were later added to an original trumpet bell. Tubular slide stays with chased tendril pattern on dotted background. Some ferrules have chased scale pattern; others are similar, but with a eingeschlagenes Stabmuster**** [hammered staff design] on one end; still others are like the last, but wtih toothed pattern on one end. 3 ferrules on bell section have simple ring pattern and are probably of later date. Flat bell stay and adjacent sleeve haveembossed tendril pattern on dotted background, diagonal strokes; rings in slide bow and bell bow, mounted on plate; these plates and plate adjacent to hinge on bell stay have engraved zigzag pattern. Garland with raised rim wire with scale pattern. Signature and date on hatched background."
+    }
+]

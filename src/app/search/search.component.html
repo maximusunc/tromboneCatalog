@@ -1,0 +1,11 @@
+<h2>
+  Trombones:
+</h2>
+
+<ul class="trombones">
+  <li *ngFor="let trombone of trombones">
+    <a routerLink="/detail/{{trombone.id}}">
+      <span class="badge">{{trombone.id}}</span> {{trombone.name}}
+    </a>
+  </li>
+</ul>

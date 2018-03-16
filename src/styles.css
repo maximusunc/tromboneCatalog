@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+header {
+    text-align: center;
+    height: 100px;
+    background-color: teal;
+}
+footer {
+    border-top: 2px black solid;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+}
+#container {
+    min-height: 100%;
+    position: relative;
+}
+#content {
+    padding-bottom: 150px;
+    height: 100%;
+    display: block;
+}

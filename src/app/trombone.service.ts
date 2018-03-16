@@ -59,7 +59,7 @@ export class TromboneService {
     }
 
     return this.http.get<Trombone[]>(`api/trombones/?name=${term}`).pipe(
-      tap(_ => this.log(`found trombonees matching "${term}"`)),
+      tap(_ => this.log(`found trombones matching "${term}"`)),
       catchError(this.handleError<Trombone[]>('searchTrombones', []))
     );
   }

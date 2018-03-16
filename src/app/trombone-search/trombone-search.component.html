@@ -4,7 +4,7 @@
   <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
 
   <ul class="search-result">
-    <li *ngFor="let trombone of tromebones$ | async" >
+    <li *ngFor="let trombone of trombones$ | async" >
       <a routerLink="/detail/{{trombone.id}}">
         {{trombone.name}}
       </a>

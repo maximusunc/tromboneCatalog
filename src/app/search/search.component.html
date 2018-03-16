@@ -2,10 +2,12 @@
   Trombones:
 </h2>
 
+<app-trombone-search></app-trombone-search>
+
 <ul class="trombones">
   <li *ngFor="let trombone of trombones">
     <a routerLink="/detail/{{trombone.id}}">
-      <span class="badge">{{trombone.id}}</span> {{trombone.name}}
+      <span class="badge">{{trombone.id}}</span> {{trombone.date}} {{trombone.maker}}
     </a>
   </li>
 </ul>

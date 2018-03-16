@@ -9,6 +9,7 @@
     background-color: white;
     cursor: pointer;
     list-style-type: none;
+    margin: auto;
   }
   
   .search-result li:hover {

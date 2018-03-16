@@ -18,6 +18,6 @@ export class DashboardComponent implements OnInit {
 
   getTrombones(): void {
     this.tromboneService.getTrombones()
-      .subscribe(trombones => this.trombones = trombones.slice(1, 5));
+      .subscribe(trombones => this.trombones = trombones.slice(0, 4));
   }
 }

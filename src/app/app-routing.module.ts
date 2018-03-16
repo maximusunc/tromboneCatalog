@@ -5,9 +5,9 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { TromboneDetailComponent } from "./trombone-detail/trombone-detail.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: "trombones", component: SearchComponent},
-  { path: "dashboard", component: DashboardComponent},
+  { path: "home", component: DashboardComponent},
   { path: "detail/:id", component: TromboneDetailComponent}
 ];
 

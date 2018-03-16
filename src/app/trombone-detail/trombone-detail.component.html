@@ -1,10 +1,13 @@
-<button (click)="goBack()">Go Back</button>
 <div *ngIf="trombone">
-  <h2>{{ trombone.name }} Details</h2>
-  <div><span>id: </span>{{trombone.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="trombone.name" placeholder="name">
-    </label>
-  </div>
+  <h2>{{trombone.date}} {{trombone.maker}} Details</h2>
+  <p>Type: {{trombone.type}}</p>
+  <p>Location: {{trombone.location}}</p>
+  <p>Signature: {{trombone.signature}}</p>
+  <p>Pitch: {{trombone.pitch}}</p>
+  <p>Dimensions: {{trombone.dimensions}}</p>
+  <p>Found: {{trombone.location1}}</p>
+  <p>Literature: {{trombone.literature}}</p>
+  <p>Remarks: {{trombone.remarks}}</p>
 </div>
+
+<button (click)="goBack()">Go Back</button>

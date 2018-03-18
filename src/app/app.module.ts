@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { MatSelectModule } from '@angular/material/select';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from "@angular/common/http";
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
@@ -10,26 +12,32 @@ import { AppRoutingModule } from './/app-routing.module';
 import { TromboneService } from "./trombone.service";
 
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
+import { ViewComponent } from './view/view.component';
 import { TromboneDetailComponent } from './trombone-detail/trombone-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TromboneSearchComponent } from './trombone-search/trombone-search.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { TromboneMakerComponent } from './trombone-maker/trombone-maker.component';
+import { TromboneTypeComponent } from './trombone-type/trombone-type.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent,
+    ViewComponent,
     TromboneDetailComponent,
     DashboardComponent,
     TromboneSearchComponent,
-    MessagesComponent
+    MessagesComponent,
+    TromboneMakerComponent,
+    TromboneTypeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     

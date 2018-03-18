@@ -24,7 +24,7 @@ export class TromboneService {
   getTrombones(): Observable<Trombone[]> {
     return this.http.get<Trombone[]>(this.trombonesUrl)
       .pipe(
-        tap(heroes => this.log(`fetched heroes`)),
+        tap(heroes => this.log(`fetched trombones`)),
         catchError(this.handleError('getTrombones', []))
       );
   };
@@ -33,32 +33,45 @@ export class TromboneService {
     const url = `${this.trombonesUrl}/${id}`;
     return this.http.get<Trombone>(url)
       .pipe(
-        tap(_ => this.log(`fetched hero id=${id}`)),
+        tap(_ => this.log(`fetched trombone id=${id}`)),
         catchError(this.handleError<Trombone>(`getTrombone id=${id}`))
       );
   };
 
-  getTromboneNo404<Data>(id: number): Observable<Trombone> {
-    const url = `${this.trombonesUrl}/?id=${id}`;
-    return this.http.get<Trombone[]>(url)
-      .pipe(
-        map(trombones => trombones[0]), // returns a {0|1} element array
-        tap(h => {
-          const outcome = h ? `fetched` : `did not find`;
-          this.log(`${outcome} hero id=${id}`);
-        }),
-        catchError(this.handleError<Trombone>(`getTrombone id=${id}`))
-      );
-  };
+  // getTromboneNo404<Data>(id: number): Observable<Trombone> {
+  //   const url = `${this.trombonesUrl}/?id=${id}`;
+  //   return this.http.get<Trombone[]>(url)
+  //     .pipe(
+  //       map(trombones => trombones[0]), // returns a {0|1} element array
+  //       tap(h => {
+  //         const outcome = h ? `fetched` : `did not find`;
+  //         this.log(`${outcome} hero id=${id}`);
+  //       }),
+  //       catchError(this.handleError<Trombone>(`getTrombone id=${id}`))
+  //     );
+  // };
 
   /* GET heroes whose name contains search term */
-  searchTrombones(term: string): Observable<Trombone[]> {
+  searchMaker(term: string): Observable<Trombone[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
     }
 
-    return this.http.get<Trombone[]>(`api/trombones/?name=${term}`).pipe(
+    return this.http.get<Trombone[]>(`api/trombones/?maker=${term}`).pipe(
+      tap(_ => this.log(`found trombones matching "${term}"`)),
+      catchError(this.handleError<Trombone[]>('searchTrombones', []))
+    );
+  }
+
+  /* GET heroes whose name contains search term */
+  searchType(term: string): Observable<Trombone[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+
+    return this.http.get<Trombone[]>(`api/trombones/?type=${term}`).pipe(
       tap(_ => this.log(`found trombones matching "${term}"`)),
       catchError(this.handleError<Trombone[]>('searchTrombones', []))
     );
@@ -66,7 +79,7 @@ export class TromboneService {
 
   /** Log a HeroService message with the MessageService */
   private log(message: string) {
-    this.messageService.add('HeroService: ' + message);
+    this.messageService.add('TromboneService: ' + message);
   }
 
   /**

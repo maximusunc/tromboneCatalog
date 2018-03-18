@@ -17,7 +17,6 @@ footer {
     height: 100px;
     position: absolute;
     bottom: 0;
-    background-color: blue;
 }
 #container {
     min-height: 100%;

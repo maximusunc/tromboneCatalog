@@ -20,6 +20,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { TromboneMakerComponent } from './trombone-maker/trombone-maker.component';
 import { TromboneTypeComponent } from './trombone-type/trombone-type.component';
+import { ConstructionComponent } from './construction/construction.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { TromboneTypeComponent } from './trombone-type/trombone-type.component';
     TromboneSearchComponent,
     MessagesComponent,
     TromboneMakerComponent,
-    TromboneTypeComponent
+    TromboneTypeComponent,
+    ConstructionComponent
   ],
   imports: [
     BrowserModule,
